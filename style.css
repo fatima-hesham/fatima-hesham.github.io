@@ -1,0 +1,453 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body {
+    font-size: 14px;
+    font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+
+    cursor: url('images/cursor.png') 0 0, auto;
+}
+
+a, button, .clickable {
+  cursor: url('images/left.png') 0 0, pointer;
+}
+
+
+header{
+    width: 100%;
+    position: fixed;
+    z-index: 999; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px;
+    background-color: rgba(255, 255, 255, .1);
+    backdrop-filter: blur(5px);
+} 
+
+.logo{
+    text-decoration: none;
+    color: #b000b3;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.8em; /* by default 16px 1em */
+}
+
+.navigation a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.1em;
+    padding-left: 30px; 
+}
+.navigation a:hover{
+    color: #735d5d;
+}
+
+section{
+    padding: 100px 200px;
+    background-color: #11111b;
+}
+
+
+.main{
+    width: 100;
+    min-height:100vh;
+    align-items: center;
+    display: flex;
+    background: url(images/) no-repeat;
+    background-color: #11111b;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.main h2{
+    color:white;
+    font-size: 1.4em;;
+    font-weight: 500;
+}
+.main h2 span{
+    display: inline-block;
+    margin-top: 10px;
+    color: #b000b3;
+    font-size: 3em;;
+    font-weight: 700;
+} 
+
+.main h3{
+    color: white;
+    font-size:2em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.main-btn{
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    font-weight: 600;
+    font-size: 1.1em;
+    background-color: rgba(255, 255, 255, .2);
+    border-bottom: white;
+    padding: 0.9375em 2.1875em;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    /* when we hover: */
+    transition: 0.7s ease;
+}
+
+.main-btn:hover{
+    background-color: #11111b;
+    transform: scale(1.1); /*  makes it bigger 10%*/
+}
+
+.social a{
+    color: white;
+    font-size: 1.4em;
+    padding-right: 30px;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+.line{
+    width: 300px;
+    height: 1px;
+    background-image: linear-gradient(90deg, #b0f3f1, #ffcfdf);
+    margin: 22px;
+}
+
+.about-me {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px; /*space between pic and text */
+}
+
+.left-side {
+    width: 60%;
+    margin: 0;
+}
+
+.right-side {
+    width: 40%;
+    max-width: 400px;
+    font-weight: bold;
+    color: white;
+    overflow: hidden;
+}
+
+.right-side img {
+    height: auto;
+    display: block;
+}
+
+.left-side .discription {
+    color: white;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: serif;
+    line-height: 1.8;
+    text-align: justify; 
+    max-width: 100%;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    /* helps for small screen..by default no wrap 'card smaller', not good */
+    flex-wrap: wrap;
+}
+
+.skills .card{
+    background-color: #11111b;
+}
+
+.card{
+    box-shadow: 0 5px 25px rgba(247, 241, 247, 0.5);
+    display: inline-block;
+    background-color: white;
+    width: 21.25em;
+    border-radius: 10px;
+    /* padding is making space inside the elemnt itself */
+    padding: 25px;
+    /* margin is making a space from other elements */
+    margin: 15px;
+}
+
+
+.card:hover{
+    transition: 0.7s ease;
+    transform: scale(1.1); 
+}
+
+
+.skills .skill{
+    color: white;
+    text-align: center;
+    padding: 20px 5px;
+
+}
+
+.skill-info{
+    padding: 5px 5px 130px 5px;
+    color: white;
+}
+
+.skill-info li{
+    margin-bottom: 10px; 
+
+}
+.icon{
+    text-align: center;
+    font-size: 7em;
+}
+.info{
+    text-align: center;
+}
+.info h3{
+    color: #11111b;
+    font-size: 1.7em;
+    font-weight: 700;
+    margin: 10px;
+}
+
+.projects{
+    background-color: #11111b;
+
+}
+
+.projects .content{
+    margin-top: 30px;
+}
+.projects .title{
+    color: white;
+}
+
+
+.Blogs{
+    background-color: #11111b;
+}
+
+.Blogs .content{
+    margin-top: 30px;
+}
+.Blogs .title{
+    color: white;
+
+}
+
+.project-card{
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid white;
+    min-height: 14em;
+    width: 23em;
+    overflow: hidden;
+    margin: 20px;
+    transition: 0.7s ease;
+    --border-angle: 0turn;
+    --main-bg: conic-gradient(from var(--border-angle), #213, #112 5%, #112 60%, #213 95%);
+    border: solid 5px transparent;
+    --gradient-border: conic-gradient(from var(--border-angle), transparent 25%, #fdfdfde0, #b000b3 99%, transparent);
+    background: var(--main-bg) padding-box, var(--gradient-border) border-box, var(--main-bg) border-box;
+    background-position: center center;
+    animation: bg-spin 3s linear infinite;
+
+    &:hover {
+    animation-play-state: paused;
+  }
+ }
+
+@keyframes bg-spin {
+    to {
+      --border-angle: 1turn;
+    }
+}
+
+@property --border-angle {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 0turn;
+}
+
+.project-card:hover{
+    transform: scale(1.1); 
+}
+
+.project-card:hover .project-image{
+    opacity: 0.9;
+}
+
+.project-image img{
+    width: 100%;
+}
+
+.project-info{
+    padding: 1em
+}
+
+.project-category{
+    font-size: 0.8em; /* by default 16px 1em */
+    color: white;
+}
+
+.project-title{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 10px;
+    color: white;
+}
+
+.more-details{
+    text-decoration: none;
+    color: #b000b3;
+
+}
+
+.more-details:hover{
+    color: white;
+}
+
+.cards-contact{
+    background-color:  #11111b;
+}
+
+.cards-contact .title{
+    padding-top: 30px;
+
+}
+
+.contact .icon{
+    font-size: 4.5em;
+}
+
+.contact .info h3{
+    color:#000;
+}
+
+.contact .info p{
+    font-size: 1.5em;
+}
+
+.footer{
+    background-color: #11111b;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.footer-title{
+    color: white;
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+.footer span{
+    color: #b000b3;
+}
+
+.footer .social-icons a{
+    color: white;
+    font-size: 1.3em;
+    padding: 0 12px 0 0;
+}
+
+@media (max-width:1024px){
+    header{
+        padding:12px 20px;
+    }
+    .navigation a{
+        padding: 10px;
+    }
+    .title{
+        font-size: 1.8em;
+    }
+    section{
+        padding: 88px 20px;
+    }
+    .main h2{
+        font-size:1.6; 
+    }
+    .main h3{
+        font-size: 1.6em;
+    }
+    .content{
+        flex-direction: column;
+        align-items: center;
+    }
+    .left-side,
+    .right-side {
+        width: 100%;
+        text-align: center;
+  }
+  .right-side img{
+    padding: 0;
+    margin: 0;
+  }
+}
+
+@media (max-width:641px){
+    body{
+        font-size: 12px;
+    }
+
+    .main h2{
+        font-size: 0.8em;
+    }
+    .main h3{
+        font-size: 1.4em;
+    }
+    .left-side,
+    .right-side {
+        width: 100%;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .right-side img{
+        padding: 0;
+        margin: 0;
+  }
+}
+
+@media (max-width:300px){
+    body{
+        font-size: 10px;
+    }
+    .left-side,
+    .right-side {
+        width: 100%;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 90px;
+  }
+    .right-side img{
+         padding: 0;
+        margin: 0;
+  }
+}
